@@ -2,85 +2,97 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Chill Connections</title>
 
-  <meta name="description" content="Chill Connections — Artist of the Month. Selected across Chill Connections playlists." />
+  <meta
+    name="description"
+    content="Chill Connections — Artist of the Month. Selected across Chill Connections playlists."
+  />
 
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-
   <main class="container">
 
     <!-- HEADER -->
     <header>
       <h1>Chill Connections</h1>
       <p class="subtitle">
-        Artist of the Month<br>
+        Artist of the Month<br />
         Selected across Chill Connections playlists
       </p>
     </header>
 
     <!-- HERO IMAGE -->
     <section class="hero">
-      <img src="assets/images/chill-connections.jpg" alt="Chill Connections cover">
+      <img
+        src="assets/images/chill-connections.jpg"
+        alt="Chill Connections cover"
+      />
     </section>
 
     <!-- ARTIST -->
-    <section class="artist" style="text-align:center;">
+    <section class="artist" style="text-align: center;">
       <h2>Artist Name</h2>
       <p class="meta">Indie · Chill · Soulful</p>
     </section>
 
     <!-- SPOTIFY EMBED -->
     <section class="music">
-      <iframe 
+      <iframe
         src="https://open.spotify.com/embed/track/TRACK_ID"
-        width="100%" 
-        height="152" 
+        width="100%"
+        height="152"
         frameborder="0"
         allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
       </iframe>
     </section>
 
     <!-- CURATION TEXT -->
-    <section class="curation" style="text-align:center;">
+    <section class="curation" style="text-align: center;">
       <h3>Why this artist was selected</h3>
       <p>
-        One artist. One reason. One asset.<br><br>
+        One artist. One reason. One asset.<br /><br />
         This artist was selected for their ability to create calm without losing depth.
         Across different Chill Connections playlists, their sound consistently stood out
         for its emotional balance, subtle production, and honest delivery.
       </p>
     </section>
 
-    <!-- LINKS / ACTIONS -->
-    <section class="actions" style="justify-content:center; flex-direction:column; align-items:center;">
+    <!-- ICON LINKS -->
+    <section class="icon-links">
 
-      <!-- Spotify Profile -->
-      <p style="margin-bottom:12px;">
-        🎧 <a 
-          href="https://open.spotify.com/user/31frwidokudqhd2uycc2uknil57e?si=3cad910077134a16"
-          target="_blank"
-          style="color: var(--accent-soft); text-decoration:none; font-weight:600;">
-          Visit Chill Connections on Spotify
-        </a>
-      </p>
+      <!-- Spotify -->
+      <a
+        href="https://open.spotify.com/user/31frwidokudqhd2uycc2uknil57e?si=3cad910077134a16"
+        target="_blank"
+        aria-label="Chill Connections on Spotify"
+        class="icon-link">
 
-      <!-- Upland Referral (texto explícito como você pediu) -->
-      <p style="max-width:520px; text-align:center; font-size:0.9rem; color:var(--text-muted);">
-        Hi! Check out Upland, a virtual property trading game.  
-        If you use this link, Upland will award you with a bonus for your first purchase:  
-        <br><br>
-        👉 <a 
-          href="https://r.upland.me/bFm9"
-          target="_blank"
-          style="color: var(--accent-warm); font-weight:600; text-decoration:none;">
-          https://r.upland.me/bFm9
-        </a>
-      </p>
+        <svg viewBox="0 0 168 168" xmlns="http://www.w3.org/2000/svg">
+          <path
+            fill="currentColor"
+            d="M84 0a84 84 0 100 168A84 84 0 0084 0zm38.7 121.6c-1.5 2.4-4.6 3.2-7 1.7-19.2-11.7-43.4-14.4-72-8.1-2.7.6-5.4-1.1-6-3.8-.6-2.7 1.1-5.4 3.8-6 31.1-7 57.7-3.9 79.2 9.2 2.4 1.5 3.2 4.6 1.7 7zm9.9-22c-1.9 3.1-5.9 4.1-9 2.2-22-13.5-55.6-17.4-81.7-9.5-3.5 1.1-7.2-.9-8.3-4.4-1.1-3.5.9-7.2 4.4-8.3 29.8-9 67.3-4.7 92.5 11 3.1 1.9 4.1 5.9 2.1 9zm.8-23.1c-26.4-15.7-70-17.1-95.1-9.4-4.2 1.3-8.6-1.1-9.9-5.3-1.3-4.2 1.1-8.6 5.3-9.9 28.8-8.7 76.7-7 107 11.1 3.8 2.2 5 7.1 2.8 10.9-2.2 3.8-7.1 5-10.9 2.6z"
+          />
+        </svg>
+      </a>
+
+      <!-- Upland -->
+      <a
+        href="https://r.upland.me/bFm9"
+        target="_blank"
+        aria-label="Explore Upland"
+        class="icon-link">
+
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <polygon
+            points="50,5 95,27.5 95,72.5 50,95 5,72.5 5,27.5"
+            fill="currentColor"
+          />
+        </svg>
+      </a>
 
     </section>
 
@@ -90,6 +102,6 @@
     </footer>
 
   </main>
-
 </body>
 </html>
+
