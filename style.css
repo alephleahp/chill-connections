@@ -130,3 +130,20 @@ footer {
   height: 100%;
 }
 
+.back-nav {
+  margin-top: 48px;
+  text-align: center;
+}
+
+.back-link {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  text-decoration: none;
+  letter-spacing: 0.3px;
+  transition: color 0.2s ease;
+}
+
+.back-link:hover {
+  color: var(--accent-warm);
+}
+
