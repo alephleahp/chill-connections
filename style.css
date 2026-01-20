@@ -233,9 +233,13 @@ a:hover {
 }
 
 .powered-by {
-  margin: 32px 0;
+  margin: 40px 0 28px;
   text-align: center;
-  font-size: 0.75rem;
-  letter-spacing: 0.12em;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
   color: var(--text-muted);
+  opacity: 0.9;
 }
+
