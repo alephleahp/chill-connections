@@ -147,3 +147,34 @@ footer {
   color: var(--accent-warm);
 }
 
+.asset-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+  margin-top: 32px;
+}
+
+.asset-badge {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  padding: 4px 8px;
+  border-radius: 999px;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+/* Status: Released */
+.asset-badge.released {
+  background: rgba(240, 140, 106, 0.15);
+  color: var(--accent-warm);
+}
+
+/* Status: In production (para o futuro) */
+.asset-badge.production {
+  background: rgba(201, 127, 165, 0.15);
+  color: var(--accent-soft);
+}
+
+
