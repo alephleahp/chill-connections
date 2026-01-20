@@ -134,6 +134,11 @@ footer {
   height: 70%;
 }
 
+.icon-link.discord svg {
+  width: 62%;
+  height: 62%;
+}
+
 .back-nav {
   margin-top: 48px;
   text-align: center;
