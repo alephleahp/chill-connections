@@ -202,4 +202,16 @@ footer {
   color: var(--accent-soft);
 }
 
+.asset-content h3 {
+  font-size: 1.1rem;
+  margin-bottom: 6px;
+}
+
+.asset-origin,
+.asset-context {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.45;
+  opacity: 0.75;
+}
 
