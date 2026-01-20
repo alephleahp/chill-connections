@@ -1,10 +1,14 @@
 :root {
+  /* já existentes */
   --bg-main: #0e0f1a;
   --bg-card: #17182a;
   --accent-warm: #f08c6a;
   --accent-soft: #c97fa5;
   --text-main: #f2f2f4;
   --text-muted: #b5b6c9;
+  --link-primary: var(--accent-soft);
+  --link-hover: var(--accent-warm);
+  --text-secondary: rgba(181, 182, 201, 0.75);
 }
 
 * {
@@ -214,4 +218,18 @@ footer {
   line-height: 1.45;
   opacity: 0.75;
 }
+
+a {
+  color: var(--link-primary);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--link-hover);
+}
+
+.secondary-text {
+  color: var(--text-secondary);
+}
+
 
