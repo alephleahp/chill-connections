@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Chill Connections</title>
 
   <meta
@@ -20,21 +21,19 @@
     <header>
       <h1>Chill Connections</h1>
       <p class="subtitle">
-        Artist of the Month<br />
+        ARTIST OF THE MONTH<br />
         Selected across Chill Connections playlists
       </p>
     </header>
 
-        </section>
-
     <!-- ARTIST -->
-    <section class="artist" style="text-align: center;">
+    <section class="artist">
       <h2>Artist Name</h2>
       <p class="meta">Indie · Chill · Soulful</p>
     </section>
 
-    <!-- CURATION TEXT -->
-    <section class="curation" style="text-align: center;">
+    <!-- CURATION -->
+    <section class="curation">
       <h3>Why this artist</h3>
       <p>
         One artist. One music. One asset.<br /><br />
@@ -43,11 +42,11 @@
         for its emotional balance, subtle production, and honest delivery.
       </p>
     </section>
-    
-    <!-- SPOTIFY EMBED -->
+
+    <!-- SPOTIFY -->
     <section class="music">
       <iframe
-        src="https://open.spotify.com/embed/playlist/2mHkb6Mlg7iPe2kNIPEV5l?si=ef4aff8745d54ba8"
+        src="https://open.spotify.com/embed/playlist/2mHkb6Mlg7iPe2kNIPEV5l"
         width="100%"
         height="380"
         frameborder="0"
@@ -55,50 +54,15 @@
       </iframe>
     </section>
 
-    <div class="powered-by">
-  <span>POWERED BY</span>
-    </div>
-
-    <!-- HERO IMAGE -->
-    <section class="hero">
-      <img
-        src="assets/images/chill-connections.jpg"
-        alt="Chill Connections cover"
-      />
-
-    <!-- ICON LINKS -->
+    <!-- ACTIONS (logo abaixo do embed) -->
     <section class="icon-links">
 
-      <!-- Spotify -->
-      <a
-        href="https://open.spotify.com/user/31frwidokudqhd2uycc2uknil57e?si=3cad910077134a16"
-        target="_blank"
-        aria-label="The artist"
-        class="icon-link"
-        title="The artist">
-
-        <svg viewBox="0 0 168 168" xmlns="http://www.w3.org/2000/svg">
-          <path
-            fill="currentColor"
-            d="M84 0a84 84 0 100 168A84 84 0 0084 0zm38.7 121.6c-1.5 2.4-4.6 3.2-7 1.7-19.2-11.7-43.4-14.4-72-8.1-2.7.6-5.4-1.1-6-3.8-.6-2.7 1.1-5.4 3.8-6 31.1-7 57.7-3.9 79.2 9.2 2.4 1.5 3.2 4.6 1.7 7zm9.9-22c-1.9 3.1-5.9 4.1-9 2.2-22-13.5-55.6-17.4-81.7-9.5-3.5 1.1-7.2-.9-8.3-4.4-1.1-3.5.9-7.2 4.4-8.3 29.8-9 67.3-4.7 92.5 11 3.1 1.9 4.1 5.9 2.1 9zm.8-23.1c-26.4-15.7-70-17.1-95.1-9.4-4.2 1.3-8.6-1.1-9.9-5.3-1.3-4.2 1.1-8.6 5.3-9.9 28.8-8.7 76.7-7 107 11.1 3.8 2.2 5 7.1 2.8 10.9-2.2 3.8-7.1 5-10.9 2.6z"
-          />
-        </svg>
-      </a>
-
-            <!-- Discord -->
-      <a
-        href="https://discord.gg/g64kX8xHXd"
-        target="_blank"
-        aria-label="Submit your music"
-        class="icon-link"
-        title="The music">
-
-            <!-- Upland -->
+      <!-- Make your asset -->
       <a
         href="/assets/"
-        aria-label="The asset"
         class="icon-link"
-        title="The asset">
+        aria-label="Make your asset"
+        title="Make your asset">
 
         <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
           <polygon
@@ -108,24 +72,41 @@
         </svg>
       </a>
 
-        <svg viewBox="0 0 245 240" xmlns="http://www.w3.org/2000/svg">
+      <!-- Spotify playlists -->
+      <a
+        href="https://open.spotify.com/user/31frwidokudqhd2uycc2uknil57e"
+        target="_blank"
+        class="icon-link"
+        aria-label="Chill Connections playlists"
+        title="Chill Connections playlists">
+
+        <svg viewBox="0 0 168 168" xmlns="http://www.w3.org/2000/svg">
           <path
             fill="currentColor"
-            d="M104.4 104.4c-5.7 0-10.2 5-10.2 11.2s4.6 11.2 10.2 11.2c5.7 0 10.3-5 10.2-11.2 0-6.2-4.5-11.2-10.2-11.2zm36.2 0c-5.7 0-10.2 5-10.2 11.2s4.6 11.2 10.2 11.2c5.7 0 10.3-5 10.2-11.2 0-6.2-4.5-11.2-10.2-11.2z"/>
-          <path
-            fill="currentColor"
-            d="M189.5 20h-134C24.4 20 10 34.4 10 52.2v135.6C10 205.6 24.4 220 42.2 220h113.3l-5.3-18.5 12.8 11.9 12.1 11.2 21.5 19V52.2c0-17.8-14.4-32.2-32.1-32.2zM163 157s-5.1-6.1-9.3-11.5c18.5-5.2 25.6-16.6 25.6-16.6-5.8 3.8-11.3 6.5-16.3 8.4-7.1 3-13.9 5-20.6 6.2-13.7 2.6-26.3 1.9-37.3-0.1-8.3-1.6-15.5-3.8-21.6-6.2-3.4-1.3-7.1-3-10.8-5.1-0.4-0.2-0.8-0.4-1.2-0.6-0.2-0.1-0.3-0.2-0.5-0.3-2.3-1.3-3.6-2.2-3.6-2.2s6.8 11.2 24.8 16.5c-4.2 5.4-9.4 11.7-9.4 11.7-31-1-42.8-21.3-42.8-21.3 0-45.2 20.2-81.9 20.2-81.9 20.2-15.1 39.4-14.7 39.4-14.7l1.4 1.6c-25.3 7.3-37 18.3-37 18.3s3.1-1.7 8.3-4c15.1-6.6 27.1-8.4 32-8.8 0.8-0.1 1.5-0.2 2.3-0.2 8.3-1.1 17.6-1.4 27.5-0.2 13.1 1.5 27.1 5.4 41.3 13.2 0 0-11.1-10.5-35.1-17.9l2-2.3s19.2-0.4 39.4 14.7c0 0 20.2 36.7 20.2 81.9 0 0-11.9 20.3-42.9 21.3z"/>
+            d="M84 0a84 84 0 100 168A84 84 0 0084 0zm38.7 121.6c-1.5 2.4-4.6 3.2-7 1.7-19.2-11.7-43.4-14.4-72-8.1-2.7.6-5.4-1.1-6-3.8-.6-2.7 1.1-5.4 3.8-6 31.1-7 57.7-3.9 79.2 9.2 2.4 1.5 3.2 4.6 1.7 7z"/>
         </svg>
       </a>
+
+    </section>
+
+    <!-- POWERED BY -->
+    <section class="powered-by">
+      <span>POWERED BY</span>
+    </section>
+
+    <!-- HERO IMAGE -->
+    <section class="hero">
+      <img
+        src="assets/images/chill-connections.jpg"
+        alt="Chill Connections cover"
+      />
     </section>
 
     <!-- FOOTER -->
-    <footer>
-      Chill Connections: between the physical and the digital
+    <footer class="footer-minimal">
+      Chill Connections — between the physical and the digital
     </footer>
 
   </main>
 </body>
 </html>
-
-
