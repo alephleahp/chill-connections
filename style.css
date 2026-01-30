@@ -1,3 +1,6 @@
+/* =====================================================
+   DESIGN TOKENS
+   ===================================================== */
 :root {
   --bg-main: #0e0f1a;
   --bg-soft: #17182a;
@@ -7,8 +10,12 @@
 
   --text-main: #f2f2f4;
   --text-muted: #b5b6c9;
+  --text-faint: rgba(181, 182, 201, 0.75);
 }
 
+/* =====================================================
+   BASE RESET
+   ===================================================== */
 * {
   box-sizing: border-box;
 }
@@ -20,14 +27,27 @@ body {
   color: var(--text-main);
 }
 
-/* LAYOUT */
+a {
+  color: var(--accent-soft);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--accent-main);
+}
+
+/* =====================================================
+   LAYOUT
+   ===================================================== */
 .container {
   max-width: 900px;
   margin: auto;
   padding: 32px 24px;
 }
 
-/* HEADER (shared) */
+/* =====================================================
+   HEADER (shared)
+   ===================================================== */
 header {
   text-align: center;
   margin-bottom: 40px;
@@ -46,7 +66,9 @@ header h1 {
   line-height: 1.5;
 }
 
-/* ARTIST (home) */
+/* =====================================================
+   HOME — ARTIST
+   ===================================================== */
 .artist {
   text-align: center;
   margin-bottom: 28px;
@@ -62,7 +84,9 @@ header h1 {
   color: var(--text-muted);
 }
 
-/* CURATION (home) */
+/* =====================================================
+   HOME — CURATION
+   ===================================================== */
 .curation {
   text-align: center;
   margin-bottom: 36px;
@@ -78,12 +102,16 @@ header h1 {
   opacity: 0.9;
 }
 
-/* SPOTIFY */
+/* =====================================================
+   HOME — SPOTIFY
+   ===================================================== */
 .music {
   margin-bottom: 24px;
 }
 
-/* ICON ACTIONS (home) */
+/* =====================================================
+   HOME — ACTION ICONS
+   ===================================================== */
 .icon-links {
   display: flex;
   justify-content: center;
@@ -108,7 +136,9 @@ header h1 {
   height: 100%;
 }
 
-/* POWERED BY */
+/* =====================================================
+   HOME — POWERED BY
+   ===================================================== */
 .powered-by {
   text-align: center;
   margin: 48px 0 24px;
@@ -116,21 +146,24 @@ header h1 {
 
 .powered-by span {
   font-size: 0.7rem;
-  letter-spacing: 1.6px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
   color: var(--text-muted);
-  opacity: 0.7;
+  opacity: 0.8;
 }
 
-/* HERO */
+/* =====================================================
+   HERO IMAGE
+   ===================================================== */
 .hero img {
   width: 100%;
   border-radius: 14px;
   margin-bottom: 56px;
 }
 
-/* ===== ASSETS PAGE ===== */
-
-/* ASSET GRID */
+/* =====================================================
+   ASSETS PAGE — GRID
+   ===================================================== */
 .asset-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -142,6 +175,7 @@ header h1 {
   background: var(--bg-soft);
   border-radius: 14px;
   overflow: hidden;
+  text-align: center;
 }
 
 .asset-image img {
@@ -150,7 +184,7 @@ header h1 {
 }
 
 .asset-content {
-  padding: 18px 16px 20px;
+  padding: 18px 16px 22px;
 }
 
 .asset-content h3 {
@@ -158,145 +192,46 @@ header h1 {
   font-size: 1.05rem;
 }
 
-.asset-origin {
+/* =====================================================
+   ASSET META
+   ===================================================== */
+.asset-origin,
+.asset-context {
   font-size: 0.8rem;
-  color: var(--text-muted);
-  margin-bottom: 6px;
-}
-
-.asset-origin a {
-  color: var(--accent-soft);
-  text-decoration: none;
-}
-
-.asset-origin a:hover {
-  color: var(--accent-main);
+  color: var(--text-faint);
+  line-height: 1.45;
 }
 
 .asset-context {
-  font-size: 0.75rem;
-  color: var(--text-muted);
-  opacity: 0.7;
+  margin-top: 4px;
 }
 
-/* BADGES */
+/* =====================================================
+   ASSET BADGES
+   ===================================================== */
 .asset-badge {
   display: inline-block;
   font-size: 0.65rem;
   letter-spacing: 0.6px;
   padding: 4px 8px;
-  border-radius: 6px;
-  background: rgba(255,255,255,0.06);
-  color: var(--text-muted);
+  border-radius: 999px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
 }
 
 .asset-badge.released {
+  background: rgba(240, 140, 106, 0.15);
   color: var(--accent-main);
 }
 
-/* UPLAND LOCATIONS */
-.upland-locations {
-  margin-bottom: 64px;
-}
-
-.upland-locations h2 {
-  margin-bottom: 12px;
-}
-
-.upland-locations h3 {
-  margin-top: 28px;
-  margin-bottom: 6px;
-}
-
-.secondary-text {
-  font-size: 0.85rem;
-  color: var(--text-muted);
-}
-
-.upland-links {
-  list-style: none;
-  padding: 0;
-  margin: 12px 0 0;
-}
-
-.upland-links li {
-  margin-bottom: 6px;
-}
-
-.upland-links a {
+.asset-badge.production {
+  background: rgba(201, 127, 165, 0.15);
   color: var(--accent-soft);
-  text-decoration: none;
 }
 
-.upland-links a:hover {
-  color: var(--accent-main);
-}
-
-/* CTA */
-.asset-cta {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 32px;
-  margin-bottom: 56px;
-}
-
-.cta-block {
-  background: var(--bg-soft);
-  border-radius: 14px;
-  padding: 24px;
-  text-align: center;
-}
-
-.btn-primary,
-.btn-secondary {
-  display: inline-block;
-  margin-top: 12px;
-  padding: 10px 20px;
-  border-radius: 10px;
-  font-weight: 600;
-  text-decoration: none;
-}
-
-.btn-primary {
-  background: var(--accent-main);
-  color: #1a1a1a;
-}
-
-.btn-secondary {
-  border: 1px solid var(--accent-soft);
-  color: var(--text-main);
-}
-
-.cta-note {
-  margin-top: 10px;
-  font-size: 0.75rem;
-  color: var(--text-muted);
-}
-
-/* BACK NAV */
-.back-nav {
-  text-align: center;
-  margin-top: 32px;
-}
-
-.back-link {
-  font-size: 0.8rem;
-  color: var(--text-muted);
-  text-decoration: none;
-}
-
-.back-link:hover {
-  color: var(--accent-main);
-}
-
-/* FOOTER */
-footer {
-  text-align: center;
-  font-size: 0.75rem;
-  color: var(--text-muted);
-  letter-spacing: 0.3px;
-}
-
+/* =====================================================
+   CTA GRID
+   ===================================================== */
 .cta-grid {
   margin-top: 64px;
   display: grid;
@@ -305,7 +240,7 @@ footer {
 }
 
 .cta-card {
-  background: var(--bg-card);
+  background: var(--bg-soft);
   border-radius: 14px;
   padding: 24px;
   text-align: center;
@@ -323,33 +258,80 @@ footer {
   letter-spacing: 0.04em;
 }
 
-.btn-primary {
+.cta-note {
+  margin-top: 10px;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+/* =====================================================
+   BUTTONS
+   ===================================================== */
+.btn-primary,
+.btn-secondary,
+.btn-tertiary {
   display: inline-block;
   padding: 10px 18px;
-  background: var(--accent-warm);
-  color: #1a1a1a;
   border-radius: 10px;
   font-weight: 600;
+}
+
+.btn-primary {
+  background: var(--accent-main);
+  color: #1a1a1a;
 }
 
 .btn-secondary {
-  display: inline-block;
-  padding: 10px 18px;
   border: 1px solid var(--accent-soft);
   color: var(--text-main);
-  border-radius: 10px;
-  font-weight: 600;
 }
 
-.btn-ghost {
+.btn-tertiary {
   background: transparent;
   border: none;
   color: var(--accent-soft);
-  font-weight: 600;
   cursor: pointer;
 }
 
-.btn-ghost:hover {
-  color: var(--accent-warm);
+.btn-tertiary:hover {
+  color: var(--accent-main);
+}
+
+/* =====================================================
+   DETAILS (Industrial District)
+   ===================================================== */
+.district-details {
+  margin-top: 40px;
+}
+
+.district-details summary {
+  cursor: pointer;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.district-details h4 {
+  margin-top: 20px;
+  margin-bottom: 8px;
+}
+
+.district-details ul {
+  list-style: none;
+  padding: 0;
+}
+
+.district-details li {
+  margin-bottom: 6px;
+}
+
+/* =====================================================
+   FOOTER
+   ===================================================== */
+footer {
+  margin-top: 64px;
+  text-align: center;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  letter-spacing: 0.3px;
 }
 
